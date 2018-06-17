@@ -1,0 +1,53 @@
+{
+  "name": "project_status",
+  "version": "0.1.0",
+  "description": "Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.",
+  "main": "index.js",
+  "dependencies": {
+    "badge-up": "^2.3.0",
+    "chalk": "^2.4.1",
+    "moment": "^2.22.2",
+    "octonode": "^0.9.2",
+    "semver": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1",
+    "tape-async": "^2.3.0"
+  },
+  "scripts": {
+    "test": "tape test/*.test.js | tap-spec"
+  },
+  "bin": {
+    "status": "bin/status.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorDeAndres/projectStauts.git"
+  },
+  "keywords": [
+    "project",
+    "status",
+    "data",
+    "docs",
+    "documentation",
+    "dependencies",
+    "devdependencies",
+    "extract",
+    "package.json"
+  ],
+  "author": "Victor de Andres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VictorDeAndres/projectStauts/issues"
+  },
+  "homepage": "https://github.com/VictorDeAndres/projectStauts#readme"
+}
