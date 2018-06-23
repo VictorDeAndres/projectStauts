@@ -146,7 +146,6 @@ test('Test audit module', (TC) => {
     const actual = '\n   $ npm install --save-dev karma@2.0.2 to resolve 12 vulnerabilities\n   SEMVER WARNING: Recommended action is a potentially breaking change\r\n\n   $ npm update ws --depth 4 to resolve 1 vulnerabilities\r\n';
     const expected = audit.textParagraph;
 
-    console.info('Testtses:', expected);
     assert.equal(actual, expected,
       `Should return text`);
 

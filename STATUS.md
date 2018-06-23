@@ -1,6 +1,6 @@
 # Project Status
-##### Wed Jun 20 2018 19:18:00 GMT+0200
-  ## project-status
+##### Sat Jun 23 2018 22:27:32 GMT+0200
+  ## project_status
 Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.
 
 ![](./assets/version.svg) ![](./assets/license.svg) 
@@ -8,7 +8,7 @@ Generate a status report of your projects automatically, know the status of your
 ### dependencies
 ![](./assets/dependencies.svg) 
 ### devDependencies
-![](./assets/dependencies.svg) 
+![](./assets/eslint.svg) 
 ## Audit Dependencies
 ![](./assets/info.svg) ![](./assets/low.svg) ![](./assets/moderate.svg) ![](./assets/high.svg) ![](./assets/critical.svg) 
 ### actions

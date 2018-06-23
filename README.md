@@ -20,6 +20,10 @@ Install project-status as a development dependency:
 
     npm install --save-dev project-status
 
+or a global package
+
+    npm install -g project-status
+
 ## [](https://github.com/VictorDeAndres/projectStauts#usage)Usage
 
     $ status
