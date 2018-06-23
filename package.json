@@ -27,7 +27,7 @@
     "test": "tape test/*.test.js | tap-spec"
   },
   "bin": {
-    "status": "bin/status.js"
+    "status": ".bin/status.js"
   },
   "repository": {
     "type": "git",
