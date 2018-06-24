@@ -1,6 +1,6 @@
 # Project Status
-##### Sun Jun 24 2018 11:56:26 GMT+0200
-  ## project_status
+##### Sun Jun 24 2018 12:01:00 GMT+0200
+  ## project-status
 Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.
 
 ![](./assets/version.svg) ![](./assets/license.svg) 
