@@ -1,6 +1,6 @@
 {
   "name": "project-status",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.",
   "main": "index.js",
   "dependencies": {
