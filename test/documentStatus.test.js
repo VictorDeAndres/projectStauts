@@ -1,12 +1,12 @@
 const test = require('tape-async');
-const StatusMarkDown = require('./../lib/statusMarkDown');
+const documentStatus = require('./../lib/documentStatus');
 
-test('Test StatusMarkDown class', function(TC) {
+test('Test documentStatus class', function(TC) {
   TC.test('Test constructor class', (assert) => {
     const actual = {
       textParagraph: '',
     };
-    const expected = new StatusMarkDown();
+    const expected = new documentStatus();
 
     assert.deepEqual(actual, expected,
       `Should return { textParagraph: '' }`);
@@ -18,7 +18,7 @@ test('Test StatusMarkDown class', function(TC) {
     const actual = {
       textParagraph: '\r\n',
     };
-    const expected = new StatusMarkDown();
+    const expected = new documentStatus();
     expected.returnCarrige();
 
     assert.deepEqual(actual, expected,
@@ -31,7 +31,7 @@ test('Test StatusMarkDown class', function(TC) {
     const actual = {
       textParagraph: '## Test Title\r\n',
     };
-    const expected = new StatusMarkDown();
+    const expected = new documentStatus();
     expected.title = 'Test Title';
     expected.title;
 
@@ -45,9 +45,23 @@ test('Test StatusMarkDown class', function(TC) {
     const actual = {
       textParagraph: '## Test SubTitle\r\n',
     };
-    const expected = new StatusMarkDown();
+    const expected = new documentStatus();
     expected.title = 'Test SubTitle';
     expected.subTitle;
+
+    assert.deepEqual(actual, expected,
+      `Should return { textParagraph: '## Test SubTitle' }`);
+
+    assert.end();
+  });
+
+  TC.test('Test miniSubTitle method', (assert) => {
+    const actual = {
+      textParagraph: '#### Test SubTitle\r\n',
+    };
+    const expected = new documentStatus();
+    expected.miniSubTitle = 'Test SubTitle';
+    expected.miniSubTitle;
 
     assert.deepEqual(actual, expected,
       `Should return { textParagraph: '## Test SubTitle' }`);
@@ -59,7 +73,7 @@ test('Test StatusMarkDown class', function(TC) {
     const actual = {
       textParagraph: 'Test paragraph\r\n',
     };
-    const expected = new StatusMarkDown();
+    const expected = new documentStatus();
     expected.paragraph = 'Test paragraph';
     expected.paragraph;
 
@@ -70,8 +84,8 @@ test('Test StatusMarkDown class', function(TC) {
   });
 
   TC.test('Test standardBadge method', async (assert) => {
-    const statusMarkDown = new StatusMarkDown();
-    await statusMarkDown.standardBadge({
+    const DocumentStatus = new documentStatus();
+    await DocumentStatus.standardBadge({
       title: 'version',
       info: '1.0.0',
       color: 'blue',
@@ -80,7 +94,7 @@ test('Test StatusMarkDown class', function(TC) {
     const actual = {
       textParagraph: '![](./assets/version.svg) ',
     };
-    const expected = statusMarkDown;
+    const expected = DocumentStatus;
 
     assert.deepEqual(actual, expected,
       `Should return svg badge`);

@@ -47,5 +47,5 @@ Victor de Andrés
 ## [](https://github.com/VictorDeAndres/projectStauts#license)License
 
   
-
+node .bin/status --user victor.deandres@gmail.com --password 4ZYScZ43b96L
 Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).

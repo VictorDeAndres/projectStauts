@@ -1,5 +1,4 @@
 const test = require('tape-async');
-const tapSpec = require('tap-spec');
 const auditModule = require('./../lib/audit');
 
 test('Test audit module', (TC) => {
@@ -153,7 +152,4 @@ test('Test audit module', (TC) => {
   });
 });
 
-test.createStream()
-  .pipe(tapSpec())
-  .pipe(process.stdout);
 
