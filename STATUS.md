@@ -1,5 +1,5 @@
 # Project Status
-##### 06 July 2018
+##### 07 July 2018
   ## project-status
 Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.
 
@@ -24,7 +24,8 @@ Generate a status report of your projects automatically, know the status of your
 #### Resume by tags
 ![](./assets/bug.svg) 
 ![](./assets/duplicate.svg) 
-![](./assets/enhancement.svg) 
+[![enhancement](![](./assets/enhancement.svg))](https://github.com/VictorDeAndres/projectStauts/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
 ![](./assets/good-first-issue.svg) 
 ![](./assets/help-wanted.svg) 
 ![](./assets/invalid.svg) 

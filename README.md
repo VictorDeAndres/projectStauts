@@ -38,6 +38,14 @@ This command will generated a new file, STATUS.md, in your root directory with a
     npm test
     node ./test/*.test.js | tap-spec
 
+## [](https://github.com/VictorDeAndres/projectStauts#changelog)ChangeLog
+
+## [0.2.0] - 2017-06-20
+### Added
+- Added changelog to readme.
+- Add GitHub information, show open issues and milestones status.
+- Access GitHub information from badges.
+
 ## [](https://github.com/VictorDeAndres/projectStauts#author)Author
 Victor de Andrés
 
@@ -46,6 +54,4 @@ Victor de Andrés
 
 ## [](https://github.com/VictorDeAndres/projectStauts#license)License
 
-  
-node .bin/status --user victor.deandres@gmail.com --password 4ZYScZ43b96L
 Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
