@@ -1,6 +1,6 @@
 
 # Project Status
-![](./assets/version.svg) ![](./assets/license.svg) 
+![](./assets/npm.svg) ![](./assets/license.svg) 
 
 Generate a status report of your projects automatically, know the status of your dependencies and development dependencies. You know what are the dependencies that you must update. You know which dependencies you can update without risk, and what updates can make your project not work correctly.
 
