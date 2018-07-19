@@ -36,7 +36,6 @@ This command will generated a new file, STATUS.md, in your root directory with a
 ## [](https://github.com/VictorDeAndres/projectStauts#test)Tests
 
     npm test
-    node ./test/*.test.js | tap-spec
 
 ## [](https://github.com/VictorDeAndres/projectStauts#changelog)ChangeLog
 
@@ -45,6 +44,9 @@ This command will generated a new file, STATUS.md, in your root directory with a
 - Added changelog to readme.
 - Add GitHub information, show open issues and milestones status.
 - Access GitHub information from badges.
+
+### Changed
+- Modify version badge, now is npm badge
 
 ## [](https://github.com/VictorDeAndres/projectStauts#author)Author
 Victor de Andrés

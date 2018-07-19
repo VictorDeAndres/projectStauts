@@ -39,4 +39,17 @@ test('Test github module', function(TC) {
     assert.end();
   });
 
+  TC.test('Test generate url to open label issue', (assert) => {
+
+    const gitHubModule = new github.GitHub();
+
+    const actual = 'https://github.com/VictorDeAndres/projectStauts/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement';
+    const expected = gitHubModule.urlOpenIssueLabel('enhancement');
+
+    assert.equal(actual, expected,
+      `Should return https://github.com/VictorDeAndres/projectStauts/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement`);
+
+    assert.end();
+  });
+
 });

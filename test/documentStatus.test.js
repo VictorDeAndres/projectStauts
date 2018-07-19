@@ -83,6 +83,18 @@ test('Test documentStatus class', function(TC) {
     assert.end();
   });
 
+  TC.test('Test image link method', (assert) => {
+    const actual = '[![badge](./image/badge.svg)](http://test.net/)';
+
+    const DocumentStatus = new documentStatus();
+    expected = DocumentStatus.imagelink('badge', 'http://test.net/');
+
+    assert.deepEqual(actual, expected,
+      `Should return '[![badge](./image/badge.svg)](http://test.net/)'`);
+
+    assert.end();
+  });
+
   TC.test('Test standardBadge method', async (assert) => {
     const DocumentStatus = new documentStatus();
     await DocumentStatus.standardBadge({
