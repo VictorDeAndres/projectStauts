@@ -84,13 +84,13 @@ test('Test documentStatus class', function(TC) {
   });
 
   TC.test('Test image link method', (assert) => {
-    const actual = '[![badge](./image/badge.svg)](http://test.net/)';
+    const actual = '[![badge](./assets/badge.svg)](http://test.net/)';
 
     const DocumentStatus = new documentStatus();
     expected = DocumentStatus.imagelink('badge', 'http://test.net/');
 
     assert.deepEqual(actual, expected,
-      `Should return '[![badge](./image/badge.svg)](http://test.net/)'`);
+      `Should return '[![badge](./assets/badge.svg)](http://test.net/)'`);
 
     assert.end();
   });
